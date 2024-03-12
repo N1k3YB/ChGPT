@@ -42,7 +42,7 @@ async function sendMessage(message) {
 
     const data = { message };
     try {
-      const response = await fetch('http://127.0.0.1:8000/generate_response', {
+      const response = await fetch('http://188.186.45.198/generate_response', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
