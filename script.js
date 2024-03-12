@@ -42,7 +42,7 @@ async function sendMessage(message) {
 
     const data = { message };
     try {
-      const response = await fetch('http://127.0.0.1:8000/generate_response', {
+      const response = await fetch('https://chgptconn.onrender.com/generate_response', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
