@@ -55,7 +55,7 @@ async function sendMessage(message) {
       }
 
       const result = await response.json();
-      chatHistory[currentChat].push({ role: "CGPT", content: result.response });
+      chatHistory[currentChat].push({ role: "ChGPT", content: result.response });
     } catch (error) {
       console.error('Error generating response:', error);
       let errorMessage;
@@ -64,7 +64,7 @@ async function sendMessage(message) {
       } else {
         errorMessage = `Извините, произошла ошибка: ${error.message}`;
       }
-      chatHistory[currentChat].push({ role: "CGPT", content: errorMessage });
+      chatHistory[currentChat].push({ role: "ChGPT", content: errorMessage });
     }
 
     renderChatHistory();
