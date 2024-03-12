@@ -42,7 +42,7 @@ async function sendMessage(message) {
 
     const data = { message };
     try {
-      const response = await fetch('http://188.186.45.198/generate_response', {
+      const response = await fetch('https://9559-188-186-45-198.ngrok-free.app/generate_response', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
